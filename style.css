@@ -1,0 +1,554 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Roboto', sans-serif;
+    }
+    /* header top */
+    
+    .header-top {
+        background: #4834d4;
+        color: #fff;
+        padding: 10px 0;
+    }
+    
+    .header-top i {
+        margin-right: 20px;
+    }
+    
+    .social-item {
+        display: block;
+        text-align: right;
+    }
+    /* header menu */
+    
+    .logo {
+        display: inline-flex;
+        margin-top: 10px;
+    }
+    
+    .logo img {
+        width: 80px;
+        height: auto;
+    }
+    
+    .menu ul {
+        text-align: right;
+        list-style: none;
+    }
+    
+    .menu ul li {
+        padding-top: 35px;
+        flex-direction: column;
+    }
+    
+    .menu ul li a {
+        text-decoration: none;
+        padding: 0 20px;
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    .menu ul li a:hover {
+        background: #341e8b;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px 20px;
+    }
+    
+    .contact-item {
+        text-align: center;
+        margin-top: 26px;
+    }
+    
+    .contact-item button {
+        padding: 10px 20px;
+        border: none;
+        background: #25CCF7;
+        border-radius: 30px 30px;
+    }
+    
+    .contact-item a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    .contact-item button:hover {
+        background: #341e8b;
+    }
+    /* banner */
+    
+    .banner .container {
+        width: 100%;
+        /* min-height: 50px; */
+        height: 800px;
+    }
+    
+    .geeks {
+        padding: 50px;
+        text-align: left;
+    }
+    
+    .banner {
+        position: relative;
+        background-color: #341e8b;
+        background-image: linear-gradient(300deg, #4b51cc 0%, #08234b 74%);
+    }
+    
+    .banner:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        background: url(https://media.geeksforgeeks.org/wp-content/uploads/20200326181026/wave3.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .banner img {
+        width: 100%;
+        height: 550px;
+    }
+    
+    .banner .content {
+        padding: 80px 0;
+    }
+    
+    .banner button {
+        margin-top: 30px;
+        padding: 10px 30px;
+        border-radius: 30px 30px;
+    }
+    
+    .banner button a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    
+    .banner button:hover {
+        background: #25CCF7;
+        color: #fff;
+    }
+    /* about us */
+    
+    .about-us {
+        margin-top: 80px;
+    }
+    
+    hr {
+        overflow: visible;
+        /* For IE */
+        padding: 0;
+        border: none;
+        border-top: medium double rgb(29, 187, 185);
+        color: rgb(38, 158, 164);
+        text-align: center;
+        width: 200px;
+    }
+    
+    hr:after {
+        content: "§";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background: white;
+    }
+    
+    .list-item {
+        list-style: none;
+    }
+    
+    .about-us li {
+        padding-left: 0;
+    }
+    
+    .about-us li::before {
+        content: "\f00c";
+        font-family: "Font Awesome 5 free";
+        color: rgb(40, 42, 159);
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    /* skill */
+    
+    .skill {
+        margin-top: 50px;
+    }
+    
+    .skill .card {
+        display: inline-block;
+        border: none;
+    }
+    
+    .skill i {
+        padding: 0 20px;
+        font-size: 60px;
+        color: rgb(30, 110, 160);
+    }
+    
+    .skill .content {
+        width: 70%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    
+    .skill .content h2 {
+        font-size: 20px;
+    }
+    
+    .skill .content p {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 80;
+    }
+    
+    .skill img {
+        width: 400px;
+        height: 400px;
+    }
+    /* team */
+    
+    .team .card {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        color: #fff;
+        background-image: linear-gradient(300deg, #4b51cc 0%, #08234b 74%);
+        border-radius: 10px;
+        box-shadow: 0px 0px 18px 0 black;
+        transition: .3s ease box-shadow;
+    }
+    
+    .team .card:hover {
+        box-shadow: 0px 0px 5px 0 black;
+    }
+    
+    .team .social-item {
+        text-align: left;
+        padding-top: 30px;
+    }
+    
+    .team .social-item a {
+        color: #fff;
+        padding: 0 5px;
+    }
+    
+    .team img {
+        width: 400px;
+        height: auto;
+        display: inline-block;
+        margin-right: 0;
+    }
+    
+    .team .card-img {
+        text-align: right;
+    }
+    
+    .team hr {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-left: 550px;
+    }
+    /* technology */
+    
+    .technology-list {
+        background: #ecf0f1;
+    }
+    
+    .technology ul {
+        list-style: none;
+        margin-top: 0;
+        padding: 40px 0;
+        margin-bottom: 0;
+    }
+    
+    .technology ul li {
+        display: inline-block;
+        padding: 10px 50px;
+        margin-left: 85px;
+        border-radius: 20px 20px;
+    }
+    
+    .technology ul li i {
+        font-size: 20px;
+        color: #4834d4;
+    }
+    
+    .technology ul li i a {
+        font-size: 20px;
+    }
+    
+    .technology ul li:hover {
+        background: #4834d4;
+        color: #fff;
+    }
+    
+    .technology ul li i:hover {
+        color: #fff;
+    }
+    
+    .technology img {
+        width: 100%;
+    }
+    
+    .technology .content {
+        margin-top: 100px;
+    }
+    
+    .technology .list-group {
+        list-style: none;
+    }
+    
+    .list-group li {
+        padding-left: 0;
+        font-size: 14px;
+    }
+    
+    .list-group li::before {
+        content: "\f00c";
+        font-family: "Font Awesome 5 free";
+        color: rgb(40, 42, 159);
+        font-weight: 600;
+        margin-right: 10px;
+    }
+    
+    .medical-list {
+        list-style: none;
+        height: 250px;
+        padding-top: 50px;
+        background: url(images/wave-haikei.png) no-repeat;
+    }
+    
+    .medical-list li {
+        display: inline-block;
+        padding: 10px 40px;
+        margin-left: 110px;
+    }
+    
+    .medical-l .medical-list li i {
+        font-size: 25px;
+    }
+    
+    .app-form .contact-section {
+        background-image: linear-gradient(300deg, #4b51cc 0%, #08234b 74%);
+    }
+    
+    .app-form .submit {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .medihelp hr {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-left: 550px;
+    }
+    
+    .medihelp .card {
+        background: rgba(223, 249, 251, 1.0);
+        border-radius: 10px;
+    }
+    
+    .medihelp .card-title h5 {
+        text-align: right;
+        background: #4834d4;
+        margin-left: 280px;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 20px 0 0 20px;
+    }
+    
+    .medihelp .list-group {
+        list-style: none;
+        padding-left: 40px;
+    }
+    
+    .medihelp button {
+        text-align: center;
+        margin-left: 150px;
+        margin-top: 30px;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 20px 20px;
+        background: #25CCF7;
+    }
+    
+    .medihelp button a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .medihelp button:hover {
+        background: #341e8b;
+    }
+    
+    .que h6 {
+        margin: 20px 100px 20px 0;
+        background: #341e8b;
+        padding: 15px 0 15px 20px;
+        border-radius: 30px 30px;
+        color: #fff;
+    }
+    
+    .que h6 span {
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    
+    .que p {
+        padding: 20px 15px;
+        font-size: 15px;
+        font-weight: 80;
+    }
+    
+    .que img {
+        width: 400px;
+        height: auto;
+        margin-left: 150px;
+    }
+    
+    .timetable .container {
+        background-image: linear-gradient(300deg, #4b51cc 0%, #08234b 74%);
+        color: #fff;
+    }
+    
+    .timetable p {
+        font-size: 14px;
+        padding-top: 22px;
+    }
+    
+    .timetable button {
+        margin-top: 35px;
+        border: none;
+        padding: 10px 20px;
+        background: #25CCF7;
+        border-radius: 30px 30px;
+    }
+    
+    .timetable button a {
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .timetable i {
+        font-size: 12px;
+        color: rgb(54, 164, 188);
+    }
+    
+    .timetable i span {
+        padding-left: 20px;
+        color: #fff;
+    }
+    
+    .footer ul {
+        list-style: none;
+        display: inline-block;
+        padding-top: 40px;
+        margin-left: 60px;
+    }
+    
+    .footer ul li {
+        display: inline;
+        padding-left: 20px;
+        color: #fff;
+    }
+    /* media */
+    
+    @media (max-width: 600px) {
+        .header-top .row {
+            text-align: center;
+        }
+        .header-top .social-item {
+            text-align: center;
+        }
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+        .banner .content {
+            text-align: center;
+        }
+        .banner img {
+            position: relative;
+            width: 100%;
+            height: 320px;
+        }
+        .about-us .content {
+            text-align: center;
+        }
+        .about-us .content hr {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        .skill .skill-title {
+            text-align: center;
+        }
+        .skill hr {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        .skill .card {
+            text-align: center;
+        }
+        .skill .card i {
+            display: block;
+        }
+        .team hr {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            margin: auto;
+            margin-left: 120px;
+        }
+        .technology .content {
+            text-align: center;
+        }
+        .technology .content li {
+            display: flex;
+            padding-left: 150px;
+        }
+        .medihelp hr {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            margin: auto;
+            margin-left: 120px;
+        }
+        .footer .logo {
+            display: flex;
+            justify-content: center;
+        }
+        .footer .social-media {
+            padding-left: 40px;
+        }
+        .footer h5 {
+            padding-right: 65px;
+        }
+    }
+    
+    @media (max-width: 768px) {}
